@@ -1,9 +1,9 @@
 import { HttpResponse } from './http-response'
-export type HttpPostParams = {
+export type HttpPostParams<T> = {
   url: string
-  body?: object
+  body?: T
 }
 
-export interface HttpPostClient {
-  post: (paramns: HttpPostParams) => Promise<HttpResponse>
+export interface HttpPostClient<T, R> {
+  post: (paramns: HttpPostParams<T>) => Promise<HttpResponse<R>>
 }
