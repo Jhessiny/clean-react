@@ -44,22 +44,6 @@ button{
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
- 
-
-  .header {
-    display: flex;
-    flex-direction: column;
-    border-top: 40px solid $primaryDark;
-    background-color: $primary;
-    align-items: center;
-    padding: 20px 0;
-    color: $white;
-
-    img {
-      margin-bottom: 10px;
-      width: 80px;
-    }
-  }
 
   .form{
     display: flex;
@@ -79,17 +63,6 @@ button{
       text-transform: uppercase;
       margin-bottom: 15px;
     }
-
-    // input::before{
-    //   width: 100%;
-    //   height: 20px;
-    //   content: 'oi';
-    //   position: absolute;
-    //   background-color: #7d7d7d;
-    //   top: 15px;
-    //   right: 5px;
-    //   display: block;
-    // }
 
     .inputWrap{
       margin-top: 15px;
@@ -147,10 +120,5 @@ button{
 
       }
     }
-  }
-
-  .footer{
-    background-color: $primary;
-    height: 48px;
   }
 }
