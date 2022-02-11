@@ -1,0 +1,23 @@
+@import "../../styles/colors.scss";
+
+.inputWrap{
+  margin-top: 15px;
+  position: relative;
+
+  input{
+    width: 100%;
+  }
+
+
+  span{
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    cursor: help;
+  }
+}
+
+
+
