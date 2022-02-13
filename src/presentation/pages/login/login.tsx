@@ -3,13 +3,11 @@ import React, { useState } from 'react'
 import { Footer, LoginHeader, Input, FormStatus } from '@/presentation/components'
 import Context from '@/presentation/context/form/form-context'
 
-type StateProps = {
-  isLoading: boolean
-  errorMessage: string
-}
-
 const Login: React.FC = () => {
-  const [state] = useState<StateProps>({ isLoading: false, errorMessage: '' })
+  const [state] = useState({
+    isLoading: false,
+    errorMessage: ''
+  })
 
   return (
     <div className={styles.login}>
@@ -19,8 +17,8 @@ const Login: React.FC = () => {
 
           <h2>Login</h2>
 
-          <Input type="email" name='email' placeholder='Digite seu email'/>
-          <Input type="password" name='password' placeholder='Digite sua senha'/>
+          <Input errorTitle={'Campo obrigatório'} type="email" name='email' placeholder='Digite seu email'/>
+          <Input errorTitle={'Campo obrigatório'} type="password" name='password' placeholder='Digite sua senha'/>
 
           <button disabled type="submit">Entrar</button>
 
